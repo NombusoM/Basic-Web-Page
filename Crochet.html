@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crochet is amazing</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #f8c8dc;
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 10px 10px 10px rgba(170, 56, 94, 0.9);
+        color: #f8c8dc;
+        font-size: 50px;
+      }
+      h2 {
+        text-align: center;
+        border: 4px solid #f8c8dc;
+        border-width: px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+        font-size: 22px;
+        border-radius: 10px;
+        color: #bf055c;
+        opacity: 0.8;
+      }
+      img {
+        display: block;
+        margin: auto;
+        max-width: 80%;
+        border-radius: 10px;
+      }
+
+      .page {
+        width: 45%;
+        padding: 30px;
+        margin: 30px auto;
+        border-radius: 10px;
+        background: linear-gradient(
+          122.3deg,
+          rgb(111, 71, 133) 14.6%,
+          rgb(232, 129, 166) 29.6%,
+          rgb(237, 237, 183) 42.1%,
+          rgb(244, 166, 215) 56.7%,
+          rgb(154, 219, 232) 68.7%,
+          rgb(238, 226, 159) 84.8%
+        );
+      }
+
+      .paragraph {
+        line-height: 1.5;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .learn {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #ff65a5;
+      }
+
+      .learn:hover {
+        text-decoration: underline;
+        color: #f70776;
+        font-weight: bold;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        background-color: #f8c8dc;
+        color: #f70776;
+        border: 2px solid #f9a0c5;
+        border-radius: 30px;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        text-decoration: none;
+        transition: all 200ms ease;
+        box-shadow: 2px 5px 2px rgba(208, 72, 117, 0.1);
+      }
+
+      button:hover {
+        color: #f8c8dc;
+        background: #f70776;
+        cursor: pointer;
+        opacity: 0.8;
+      }
+
+      .coded {
+        text-align: center;
+        font-size: 16px;
+        font-family: monospace;
+      }
+
+      .name {
+        text-align: center;
+
+        opacity: 0.85;
+      }
+      .profile {
+        text-decoration: none;
+        margin-top: 10px;
+        text-decoration: none;
+        padding: 10px 0px 10px 0px;
+        color: #ff65a5;
+      }
+
+      .profile:hover {
+        text-decoration: underline;
+        color: #f70776;
+        font-weight: bold;
+      }
+
+      .paragraph {
+        font-family: Arial, Helvetica, sans-serif;
+        opacity: 0.95;
+      }
+      .line1 {
+        background: linear-gradient(
+          -225deg,
+          #ff3cac 0%,
+          #562b7c 52%,
+          #2b86c5 100%
+        );
+        border: none;
+        height: 4px;
+      }
+      .line2 {
+        background: linear-gradient(
+          -225deg,
+          #ff3cac 0%,
+          #562b7c 52%,
+          #2b86c5 100%
+        );
+        border: none;
+        height: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <h1>CROCHET</h1>
+      <h2>Enter the wonderful world of <em>CROCHET!</em></h2>
+      <hr class="line1" />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/087/294/original/crochet-pink.jpg?1687907368"
+        alt="Pink Gingham cochet sample with a crochet hook"
+        width="400px"
+      />
+      <hr class="line2" />
+      <p class="paragraph">
+        <strong>Crochet</strong> is a process of creating textiles by using a
+        crochet hook to interlock loops of yarn, thread, or strands of other
+        materials. <br />The name is derived from the French term crochet,
+        meaning 'hook'. Hooks can be made from a variety of materials, such as
+        metal, wood, bamboo, or plastic.
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Crochet"
+        target="_blank"
+        class="learn"
+      >
+        Click here to learn more
+      </a>
+
+      <p>
+        <button>Buy crochet supplies</button>
+      </p>
+
+      <div class="coded div">
+        <span class="coded name">This was coded by</span>
+        <span class="coded">
+          <a
+            href="https://github.com/NombusoM/Basic-Web-Page.git"
+            target="_blank"
+            class="profile"
+          >
+            Nombuso Mdletshe
+          </a>
+        </span>
+      </div>
+    </div>
+    <script>
+      function updateHeading(newHeading) {
+        let heading = document.querySelector("h2");
+        heading.innerHTML = newHeading;
+      }
+      function crochet() {
+        let name = prompt("What is your name?");
+        name = name.trim();
+        alert("Hi, " + name + "! 👋");
+        let crochetKnow = prompt(
+          "Do you know how to crochet? Answer Yes or No!"
+        );
+        crochetKnow = crochetKnow.toLocaleLowerCase().trim();
+        updateHeading();
+        if (crochetKnow === "yes") {
+          updateHeading(
+            "Congratulations, " + name + "." + " You know how to crochet!"
+          );
+        } else {
+          updateHeading(
+            "Don't worry, " +
+              name +
+              "." +
+              " You can start learning how to crochet!"
+          );
+        }
+      }
+      let applyButton = document.querySelector("button");
+      applyButton.addEventListener("click", crochet);
+    </script>
+  </body>
+</html>
